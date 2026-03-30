@@ -1,0 +1,464 @@
+:root{
+    --primary-color: rgb(229,9,20);
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;    
+
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    background-color: black;
+}
+.upper{
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+    width: 100vw;
+    height: 70px;
+    filter: blur(15px);
+    opacity: 0.7;
+}
+.main{
+    position: relative;
+    width: 100vw;
+    min-height: 120vh;
+    background: black;
+    overflow: hidden;
+}
+.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("assets/images/backgroundNew.jpg"); 
+    width: 100vw;   
+    height: 120vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    z-index: 0;
+
+}
+#navbar{
+    position: relative;
+    z-index: 2;
+}
+.content{
+    position: relative;
+    z-index: 2;
+    min-height: 120vh;
+}
+#navbar{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    width: 100%;
+    margin: 0;
+    padding: 20px clamp(20px, 6vw, 150px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+#navbar .nav-right{
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo > img{
+    height: 40px;
+}
+#navbar .nav-right select {
+    right: 0;
+    background-color: black;
+    width: 130px;
+    height: 32px;
+    text-align: center;
+    background: transparent;
+    color: white;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+#navbar .nav-right button {
+    width: 80px;
+    height: 32px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+    margin-left: 5px;
+    border-color: transparent;
+    
+}
+.hero {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 30%;
+    color: white;
+
+}
+.hero :first-child{
+    margin: auto;
+    width: min(60%, 900px);
+    margin-bottom: 10px;
+    font-weight: 800;
+    font-size: clamp(32px, 5vw, 60px) ;
+}
+.hero :nth-child(2){
+    margin: auto;
+    font-size: clamp(18px, 2.4vw, 25px);
+    font-weight: 600;
+    margin-bottom:40px;
+}
+.hero :nth-child(3){
+    margin: auto;
+    font-size: clamp(16px, 2vw, 20px);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.hero > input{
+    margin: 2px;
+    height: 60px;
+    width: min(90vw, 420px);
+    background: transparent;
+    border-color: white;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: bolder;
+    color: white;
+    padding: 15px;
+
+    
+}
+.hero > button{
+    height: 60px;
+    width: min(90vw, 280px);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+
+}
+.separator{
+    /* background-color: brown; */
+    height: 100%;
+    width: 180%;
+    left: -40%;
+    position:absolute;
+    border-radius: 0.25rem solid transparent;
+    margin-top: 100px;
+    border-top-left-radius: 60% 100%;
+    border-top-right-radius: 60% 100%;
+    border-bottom: none ;
+    background: linear-gradient(
+                    to right,
+                    rgba(33, 13, 22, 1) 16%,
+                    rgba(184, 40, 105, 1),
+                    rgba(229, 9, 20, 1),
+                    rgba(184, 40, 105, 1),
+                    rgba(33, 13, 22, 1) 84%
+                );
+}
+.separator-bottom{
+    background-color: black;
+     height: 100%;
+    width: 180%;
+    left: -40%;
+    position:absolute;
+    border-radius: 1rem solid black;
+    margin-top: 105px;
+    border-top-left-radius: 65% 100%;
+    border-top-right-radius: 65% 100%;
+    border-bottom: none ;
+    
+}
+.cards{
+    position: relative;
+    color: white;
+    margin-left: clamp(20px, 6vw, 150px);
+}
+.images > img {
+    margin-top: 20px;
+    margin-right: clamp(12px, 4vw, 50px);
+    border-radius: 10px;
+    width: clamp(120px, 16vw, 190px);
+    height: auto;
+    
+}
+.numbers {
+    position: absolute;
+    display: flex;
+    z-index: 55;
+    color: white;
+}
+.numbers > p {
+    margin-top: clamp(-100px, -8vw, -120px);
+    margin-left: clamp(100px, 5vw, 100px);
+    margin-right: clamp(40px, 8vw, 80px);
+    font-size: clamp(48px, 9vw, 100px);
+    font-weight: bolder;
+}
+
+.cards2{
+    position: relative;
+    color: white;
+    margin-left: clamp(20px, 6vw, 150px);
+    margin-top: 50px;
+}
+.cards2Body{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card{
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-right: 0;
+    background: linear-gradient(
+        to right bottom,
+        rgb(25,34,70) 16%,
+        rgb(30,23,45),
+        rgb(33,14,23));
+    }
+    h4{
+    font-weight: bolder;
+}
+.card-title{
+    color: white;
+}
+.card-text{
+    margin-top: 20px;
+    color: grey;
+    font-weight: 600;
+}
+.card-body > img{
+    position: absolute;
+    width: 80x;
+    height: 80px;
+    right: 1%;
+    bottom: 1%;
+}
+.questions{
+    position: relative;
+    color: white;
+    margin-top: 50px;
+}
+.questions > h4 {
+    margin-left: clamp(20px, 6vw, 150px);
+}
+.faq {
+    width: min(78%, 980px);
+    margin: auto;
+}
+details {
+    background-color: rgb(45,45,45);
+    margin-bottom: 10px;
+padding: 20px;
+}
+summary{
+    font-size: 24px;
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+}
+summary::after{
+    content: "+";
+    position: absolute;
+    right: 0;
+    font-size: 30px;
+
+}
+details[open] summary::after {
+    content: "×";
+}
+details p {
+ margin-top: 15px;
+ font-size: 24px;
+
+}
+details:hover{
+    background-color: rgb(60, 60, 60) ;
+}
+.lastheader > h5{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    display: flex;
+   justify-content: center;
+   font-size: medium;
+}
+.userdetail > input{
+    margin: 2px;
+    height: 60px;
+    width: min(90vw, 600px);
+    background: transparent;
+    border-color: white;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: bolder;
+    color: white;
+    padding: 15px;
+
+    
+}
+.userdetail > button{
+    height: 60px;
+    width: 280px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+
+}
+.userdetail {
+    width: 100%;
+    text-align: center;
+    color: white;
+
+}
+footer {
+    margin-top: 100px;
+    margin-left: clamp(20px, 6vw, 150px);
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin-top: 40px;
+
+}
+ ul li {
+    width: 25%;
+    margin-bottom: 12px;
+}
+ul li a {
+     color: rgb(161,161,161);
+
+ }
+  footer select {
+    right: 0;
+    background-color: black;
+    width: 130px;
+    height: 32px;
+    text-align: center;
+    background: transparent;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.outro , .lastline {
+      color: rgb(161,161,161);
+      margin-top: 30px;
+}
+#credit {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    text-align: center;
+}
+.linkedin {
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: large;
+}
+
+@media (max-width: 900px){
+    #navbar{
+        padding: 16px clamp(16px, 5vw, 60px);
+    }
+    .hero{
+        top: 30%;
+        padding: 0 16px;
+    }
+    .cards2Body{
+        justify-content: center;
+    }
+    .cards2 .card{
+        width: min(90vw, 18rem);
+    }
+    .numbers{
+        display: none;
+    }
+}
+
+@media (max-width: 600px){
+    .upper{
+        height: 60px;
+    }
+    .logo > img{
+        height: 32px;
+    }
+    #navbar .nav-right select{
+        width: 100px;
+        height: 30px;
+    }
+    #navbar .nav-right button{
+        width: 70px;
+        height: 30px;
+    }
+    .hero > input,
+    .hero > button,
+    .userdetail > input,
+    .userdetail > button{
+        width: 92vw;
+    }
+    .userdetail > button,
+    .hero > button{
+        font-size: 1.2rem;
+    }
+    ul li{
+        width: 50%;
+    }
+}
+.outro , .lastline {
+      color: rgb(161,161,161);
+      margin-top: 30px;
+}
+#credit {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+}
+.linkedin {
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: large;
+}
+.outro , .lastline {
+      color: rgb(161,161,161);
+      margin-top: 30px;
+}
+#credit {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+}
+.linkedin {
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: large;
+}
