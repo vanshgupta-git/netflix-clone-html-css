@@ -2,8 +2,8 @@
 
 A responsive front-end clone of Netflix built using **pure HTML and CSS**. This project focuses on recreating the UI/UX of Netflix’s landing page while strengthening core frontend fundamentals like layout, responsiveness, and styling.
 
-🔗 **Live Demo:** https://netflix-clone-html-css-iota-one.vercel.app/  
-🔗 **GitHub Repo:** https://github.com/vanshgupta-git   <!-- replace with exact repo link -->
+🔗 **Live Demo:** https://netflix-clone-html-css-vansh-gupta.vercel.app/  
+🔗 **GitHub Repo:** https://github.com/vanshgupta-git/netflix-clone-html-css 
 
 ---
 
